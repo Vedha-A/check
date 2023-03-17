@@ -14,7 +14,6 @@ function setup() {
 	canvas = createCanvas(1240, 336);
 	canvas.parent('canvas');
 	instializeInSetup(mario);
-	createCanvas(650, 400);
 	video = createCapture(VIDEO);
 	video.size(600, 300);
 
@@ -29,6 +28,7 @@ function modelLoaded()
 
 function draw() {
 	game();
+	background('#D3D3D3');
 	if(noseX < 300)
 	{
 		marioX = marioX - 1;
